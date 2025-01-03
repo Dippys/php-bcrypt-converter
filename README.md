@@ -140,7 +140,7 @@ npm run test:watch  # Run tests in watch mode
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENCE](https://github.com/Dippys/php-bcrypt-converter/blob/main/LICENCE) file for details.
 
 ## Acknowledgments
 
