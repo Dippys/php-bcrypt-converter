@@ -26,8 +26,10 @@
     },
     "jest": {
         "preset": "ts-jest",
-        "testEnvironment": "node"
-    },
+        "testEnvironment": "node",
+        "testMatch": ["**/src/**/*.test.ts"], // Only look for tests in src folder
+        "testPathIgnorePatterns": ["/node_modules/", "/dist/"] // Ignore dist folder
+    }
     "keywords": [
         "bcrypt",
         "php",
