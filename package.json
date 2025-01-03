@@ -29,7 +29,7 @@
         "testEnvironment": "node",
         "testMatch": ["**/src/**/*.test.ts"],
         "testPathIgnorePatterns": ["/node_modules/", "/dist/"]
-    }
+    },
     "keywords": [
         "bcrypt",
         "php",
