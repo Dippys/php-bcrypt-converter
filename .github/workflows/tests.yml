@@ -1,0 +1,44 @@
+name: Run Tests
+
+on:
+  push: # Triggers on any push to any branch
+    branches:
+      - "**"
+  pull_request: # Triggers on any pull request to any branch
+    branches:
+      - "**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*" # Use the latest LTS version of Node.js
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Compile TypeScript
+      - name: Compile TypeScript
+        run: npx tsc --noEmit # Checks for TypeScript errors without emitting compiled files
+
+      # Step 5: Run tests
+      - name: Run tests
+        run: npm test
+
+      # Optional Step 6: Upload Jest coverage reports (if configured)
+      - name: Upload Coverage Report
+        if: success()
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/
