@@ -11,10 +11,10 @@
  */
 export interface ConversionOptions {
   /**
-   * Number of rounds used in the bcrypt hash (defaults to 10)
+   * Number of rounds used in the bcrypt hash (defaults to 12)
    * Must be between 4 and 31
    * @type {number}
-   * @default 10
+   * @default 12
    */
   rounds?: number;
 
@@ -88,7 +88,7 @@ export class PhpBcryptConverter {
    * @type {Required<ConversionOptions>}
    */
   private defaultOptions: Required<ConversionOptions> = {
-    rounds: 10,
+    rounds: 12,
     strict: true
   };
 

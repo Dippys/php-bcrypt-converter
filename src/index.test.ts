@@ -74,7 +74,7 @@ describe('PhpBcryptConverter', () => {
     });
 
     it('should return default rounds for invalid hash in getRounds', () => {
-      expect(converter.getRounds('invalid')).toBe(10);
+      expect(converter.getRounds('invalid')).toBe(12);
     });
   });
 
