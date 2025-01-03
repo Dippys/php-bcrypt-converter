@@ -1,0 +1,30 @@
+{
+    "name": "php-bcrypt-converter",
+    "version": "1.0.0",
+    "description": "Convert PHP bcrypt hashes to JavaScript bcrypt format",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node"
+    },
+    "keywords": [
+        "bcrypt",
+        "php",
+        "javascript",
+        "hash",
+        "conversion"
+    ],
+    "author": "Ahmed Khidr",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^29.5.14",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.2.5",
+        "typescript": "^5.7.2"
+    }
+}
