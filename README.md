@@ -86,7 +86,7 @@ Converts a PHP bcrypt hash to JavaScript format.
 
 - `phpHash`: The PHP bcrypt hash to convert
 - `options` (optional): Configuration options
-  - `rounds`: Default number of rounds (default: 10)
+  - `rounds`: Default number of rounds (default: 12)
   - `strict`: Whether to throw errors for invalid hashes (default: true)
 
 ##### Returns:
