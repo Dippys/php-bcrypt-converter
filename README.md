@@ -27,7 +27,7 @@ yarn add php-bcrypt-converter
 ### Basic Usage
 
 ```typescript
-import PhpBcryptConverter from 'php-bcrypt-converter';
+import { PhpBcryptConverter } from 'php-bcrypt-converter';
 
 const converter = new PhpBcryptConverter();
 
