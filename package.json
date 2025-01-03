@@ -1,8 +1,9 @@
 {
     "name": "php-bcrypt-converter",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Convert PHP bcrypt hashes to JavaScript bcrypt format",
     "main": "dist/index.js",
+    "homepage": "https://github.com/Dippys/php-bcrypt-converter",
     "types": "dist/index.d.ts",
     "scripts": {
         "test": "jest",
@@ -19,7 +20,11 @@
         "hash",
         "conversion"
     ],
-    "author": "Ahmed Khidr",
+    "author": "Ahmed Khidr (https://github.com/dippys)",
+    "repository": "dippys/php-bcrypt-converter",
+    "bugs": {
+        "url": "https://github.com/Dippys/php-bcrypt-converter/issues"
+      },
     "license": "MIT",
     "devDependencies": {
         "@types/jest": "^29.5.14",
