@@ -1,11 +1,14 @@
 {
-    "compilerOptions": {
-      "target": "es2018",
-      "module": "commonjs",
-      "declaration": true,
-      "outDir": "./dist",
-      "strict": true
-    },
-    "include": ["src"],
-    "exclude": ["node_modules", "dist"]
-  }
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "ESNext",         // Changed from commonjs to ESNext
+    "moduleResolution": "node", // Added for better module resolution
+    "declaration": true,
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,   // Added for better interop with ES modules
+    "allowSyntheticDefaultImports": true, // Added to support default imports
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
